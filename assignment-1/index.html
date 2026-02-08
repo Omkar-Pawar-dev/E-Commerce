@@ -11,10 +11,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
     <style>
-      /* PERFORMANCE OPTIMIZED HOVER */
       .product-card {
         transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s ease;
-        will-change: transform; /* Prepares GPU */
+        will-change: transform;
         backface-visibility: hidden;
         border: none !important;
       }
@@ -27,12 +26,16 @@
       .card-img-top {
         height: 280px;
         object-fit: cover;
-        /* Prevents image flickering during transform */
         transform: translateZ(0); 
       }
 
       .navbar-brand {
         letter-spacing: -1px;
+      }
+
+      .price-tag {
+        color: #198754;
+        font-size: 1.1rem;
       }
     </style>
   </head>
@@ -82,16 +85,18 @@
         </div>
       </div>
     </nav>
-
-    <div class="container my-5">
+<div class="container my-5">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
         
         <div class="col">
           <div class="card h-100 product-card shadow-sm">
             <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=500" class="card-img-top" alt="Yellow athleisure">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Street Athleisure</h5>
-              <p class="card-text text-muted small">Bold yellow tones meet athletic performance in this modern streetwear look.</p>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title fw-bold m-0">Street Athleisure</h5>
+                <span class="price-tag fw-bold">$89</span>
+              </div>
+              <p class="card-text text-muted small">Bold yellow tones meet athletic performance look.</p>
               <a href="product.html" class="btn btn-primary mt-auto">Buy Now</a>
             </div>
           </div>
@@ -101,8 +106,11 @@
           <div class="card h-100 product-card shadow-sm">
             <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=500" class="card-img-top" alt="Luxury bags">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Urban Boutique</h5>
-              <p class="card-text text-muted small">Experience the thrill of high-end shopping with our latest seasonal collection.</p>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title fw-bold m-0">Urban Boutique</h5>
+                <span class="price-tag fw-bold">$120</span>
+              </div>
+              <p class="card-text text-muted small">High-end shopping with our latest collection.</p>
               <a href="product.html" class="btn btn-primary mt-auto">Buy Now</a>
             </div>
           </div>
@@ -112,8 +120,11 @@
           <div class="card h-100 product-card shadow-sm">
             <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=500" class="card-img-top" alt="Sunglasses">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Summer Shades</h5>
-              <p class="card-text text-muted small">Keep it cool and protected with our premium designer eyewear collection.</p>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title fw-bold m-0">Summer Shades</h5>
+                <span class="price-tag fw-bold">$25</span>
+              </div>
+              <p class="card-text text-muted small">Premium designer eyewear collection.</p>
               <a href="product.html" class="btn btn-primary mt-auto">Buy Now</a>
             </div>
           </div>
@@ -123,8 +134,11 @@
           <div class="card h-100 product-card shadow-sm">
             <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=500" class="card-img-top" alt="Clothing rack">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Wardrobe Staples</h5>
-              <p class="card-text text-muted small">Curated essentials that bring versatility and style to your everyday closet.</p>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title fw-bold m-0">Wardrobe Staples</h5>
+                <span class="price-tag fw-bold">$35</span>
+              </div>
+              <p class="card-text text-muted small">Curated essentials for your everyday closet.</p>
               <a href="product.html" class="btn btn-primary mt-auto">Buy Now</a>
             </div>
           </div>
@@ -134,8 +148,11 @@
           <div class="card h-100 product-card shadow-sm">
             <img src="https://images.unsplash.com/photo-1603189343302-e603f7add05a?q=80&w=500" class="card-img-top" alt="Suit jacket">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Formal Excellence</h5>
-              <p class="card-text text-muted small">Tailored perfection for the modern gentleman. Elevate your evening wear.</p>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title fw-bold m-0">Formal Excellence</h5>
+                <span class="price-tag fw-bold">$199</span>
+              </div>
+              <p class="card-text text-muted small">Tailored perfection for the modern gentleman.</p>
               <a href="product.html" class="btn btn-primary mt-auto">Buy Now</a>
             </div>
           </div>
@@ -145,8 +162,11 @@
           <div class="card h-100 product-card shadow-sm">
             <img src="https://images.unsplash.com/photo-1601762603339-fd61e28b698a?q=80&w=500" class="card-img-top" alt="Black long sleeve">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Minimalist Noir</h5>
-              <p class="card-text text-muted small">Sleek silhouettes and dark textures for a sophisticated, edgy aesthetic.</p>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title fw-bold m-0">Minimalist Noir</h5>
+                <span class="price-tag fw-bold">$55</span>
+              </div>
+              <p class="card-text text-muted small">Sleek silhouettes and dark textures.</p>
               <a href="product.html" class="btn btn-primary mt-auto">Buy Now</a>
             </div>
           </div>
@@ -156,19 +176,11 @@
           <div class="card h-100 product-card shadow-sm">
             <img src="https://images.unsplash.com/photo-1571513800374-df1bbe650e56?q=80&w=500" class="card-img-top" alt="Woman with flowers">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Bohemian Chic</h5>
-              <p class="card-text text-muted small">Soft fabrics and earthy tones inspired by nature's timeless beauty.</p>
-              <a href="product.html" class="btn btn-primary mt-auto">Buy Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 product-card shadow-sm">
-            <img src="https://images.unsplash.com/photo-1574015974293-817f0ebebb74?q=80&w=500" class="card-img-top" alt="Grayscale portrait">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Vintage Essence</h5>
-              <p class="card-text text-muted small">A nostalgic look at fashion through the lens of classic grayscale art.</p>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title fw-bold m-0">Bohemian Chic</h5>
+                <span class="price-tag fw-bold">$78</span>
+              </div>
+              <p class="card-text text-muted small">Soft fabrics and earthy tones inspired by nature.</p>
               <a href="product.html" class="btn btn-primary mt-auto">Buy Now</a>
             </div>
           </div>
@@ -178,19 +190,11 @@
           <div class="card h-100 product-card shadow-sm">
             <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=500" class="card-img-top" alt="City wanderer">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">City Wanderer</h5>
-              <p class="card-text text-muted small">Comfortable yet stylish outfits perfect for exploring the urban jungle.</p>
-              <a href="product.html" class="btn btn-primary mt-auto">Buy Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 product-card shadow-sm">
-            <img src="https://images.unsplash.com/photo-1557777586-f6682739fcf3?q=80&w=500" class="card-img-top" alt="Artistic soul">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Artistic Expression</h5>
-              <p class="card-text text-muted small">Where creativity meets couture. Fashion for the expressive soul.</p>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title fw-bold m-0">City Wanderer</h5>
+                <span class="price-tag fw-bold">$62</span>
+              </div>
+              <p class="card-text text-muted small">Comfortable yet stylish urban jungle outfits.</p>
               <a href="product.html" class="btn btn-primary mt-auto">Buy Now</a>
             </div>
           </div>
@@ -200,107 +204,11 @@
           <div class="card h-100 product-card shadow-sm">
             <img src="https://images.unsplash.com/photo-1574201635302-388dd92a4c3f?q=80&w=500" class="card-img-top" alt="Grey knit">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Cozy Knits</h5>
-              <p class="card-text text-muted small">Stay warm with our premium wool collection, designed for ultimate comfort.</p>
-              <a href="product.html" class="btn btn-primary mt-auto">Buy Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 product-card shadow-sm">
-            <img src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?q=80&w=500" class="card-img-top" alt="Accessories">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Luxury Accessories</h5>
-              <p class="card-text text-muted small">The perfect finishing touches to elevate any outfit from basic to brilliant.</p>
-              <a href="product.html" class="btn btn-primary mt-auto">Buy Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 product-card shadow-sm">
-            <img src="https://images.unsplash.com/photo-1485518882345-15568b007407?q=80&w=500" class="card-img-top" alt="Mannequin">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Retail Vision</h5>
-              <p class="card-text text-muted small">Discover the latest runway trends translated for the modern lifestyle.</p>
-              <a href="product.html" class="btn btn-primary mt-auto">Buy Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 product-card shadow-sm">
-            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=500" class="card-img-top" alt="Wooden hangers">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Sustainable Style</h5>
-              <p class="card-text text-muted small">Eco-friendly fabrics and ethical manufacturing for a better future.</p>
-              <a href="product.html" class="btn btn-primary mt-auto">Buy Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 product-card shadow-sm">
-            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=500" class="card-img-top" alt="White top">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Pure Elegance</h5>
-              <p class="card-text text-muted small">Crisp whites and clean lines for a look that never goes out of style.</p>
-              <a href="product.html" class="btn btn-primary mt-auto">Buy Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 product-card shadow-sm">
-            <img src="https://images.unsplash.com/photo-1608748010899-18f300247112?q=80&w=500" class="card-img-top" alt="Brown coat">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Modern Outerwear</h5>
-              <p class="card-text text-muted small">Classic trench coats reimagined with a contemporary, bold twist.</p>
-              <a href="product.html" class="btn btn-primary mt-auto">Buy Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 product-card shadow-sm">
-            <img src="https://images.unsplash.com/photo-1562151270-c7d22ceb586a?q=80&w=500" class="card-img-top" alt="Yellow dress">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Radiant Yellow</h5>
-              <p class="card-text text-muted small">Brighten your mood and your wardrobe with our vibrant summer dresses.</p>
-              <a href="product.html" class="btn btn-primary mt-auto">Buy Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 product-card shadow-sm">
-            <img src="https://images.unsplash.com/photo-1632149877166-f75d49000351?q=80&w=500" class="card-img-top" alt="White coat">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Winter Contrast</h5>
-              <p class="card-text text-muted small">High-contrast styling to keep you sharp throughout the colder months.</p>
-              <a href="product.html" class="btn btn-primary mt-auto">Buy Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 product-card shadow-sm">
-            <img src="https://images.unsplash.com/photo-1571513722275-4b41940f54b8?q=80&w=500" class="card-img-top" alt="White blazer">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">The Power Suit</h5>
-              <p class="card-text text-muted small">Command attention in the boardroom with our sharp-cut blazer collection.</p>
-              <a href="product.html" class="btn btn-primary mt-auto">Buy Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 product-card shadow-sm">
-            <img src="https://images.unsplash.com/flagged/photo-1570733117311-d990c3816c47?q=80&w=500" class="card-img-top" alt="Studio sisters">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Studio Sisters</h5>
-              <p class="card-text text-muted small">Effortless coordination and clean aesthetics for the fashion-forward duo.</p>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title fw-bold m-0">Cozy Knits</h5>
+                <span class="price-tag fw-bold">$85</span>
+              </div>
+              <p class="card-text text-muted small">Premium wool collection for ultimate comfort.</p>
               <a href="product.html" class="btn btn-primary mt-auto">Buy Now</a>
             </div>
           </div>
