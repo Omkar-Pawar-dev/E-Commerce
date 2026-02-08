@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product Detail | ShopFast</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <style>
+      .product-main-img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      .breadcrumb-item a {
+        text-decoration: none;
+        color: #6c757d;
+      }
+      .size-selector input[type="radio"] {
+        display: none;
+      }
+      .size-selector label {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #dee2e6;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .size-selector input[type="radio"]:checked + label {
+        background-color: #212529;
+        color: white;
+        border-color: #212529;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-2 text-dark" href="index.html">ShopClothes</a>
+        <div class="d-flex align-items-center">
+            <a href="index.html" class="btn btn-outline-dark btn-sm me-3 d-none d-md-inline-block">
+                <i class="bi bi-arrow-left"></i> Back to Shop
+            </a>
+            <button class="btn btn-link text-dark p-0"><i class="bi bi-bag fs-4"></i></button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container my-5">
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Collection</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Product Detail</li>
+        </ol>
+      </nav>
+
+      <div class="row g-5">
+        <div class="col-lg-7">
+          <div class="position-relative">
+            <img 
+                src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80" 
+                class="product-main-img shadow-sm" 
+                alt="Product image"
+            >
+            <span class="position-absolute top-0 start-0 m-3 badge bg-dark px-3 py-2">New Arrival</span>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="ps-lg-4">
+            <h1 class="display-5 fw-bold mb-3">Street Athleisure</h1>
+            <h2 class="h4 text-success fw-bold mb-4">$89.00</h2>
+            
+            <p class="text-muted mb-4 lead">
+              Experience the perfect blend of high-fashion aesthetics and athletic utility. 
+              This piece is meticulously crafted from premium breathable fabrics designed 
+              to move with you throughout the urban landscape.
+            </p>
+
+            <div class="mb-4">
+              <label class="form-label fw-bold text-uppercase small text-secondary">Select Size</label>
+              <div class="d-flex gap-2 size-selector">
+                <input type="radio" name="size" id="sizeS" value="S">
+                <label for="sizeS">S</label>
+                
+                <input type="radio" name="size" id="sizeM" value="M" checked>
+                <label for="sizeM">M</label>
+                
+                <input type="radio" name="size" id="sizeL" value="L">
+                <label for="sizeL">L</label>
+                
+                <input type="radio" name="size" id="sizeXL" value="XL">
+                <label for="sizeXL">XL</label>
+              </div>
+            </div>
+
+            <div class="d-grid gap-3 mb-5">
+              <button class="btn btn-dark btn-lg py-3 fw-bold shadow-sm">
+                Add to Cart <i class="bi bi-cart-plus ms-2"></i>
+              </button>
+              <button class="btn btn-outline-dark btn-lg py-3 fw-bold">
+                Buy It Now
+              </button>
+            </div>
+
+            <div class="card border-0 bg-white shadow-sm rounded-3">
+              <div class="card-body p-4">
+                <div class="d-flex mb-3">
+                    <i class="bi bi-truck fs-4 me-3 text-primary"></i>
+                    <div>
+                        <h6 class="mb-0 fw-bold">Free Standard Delivery</h6>
+                        <small class="text-muted">On all orders over $100</small>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <i class="bi bi-shield-check fs-4 me-3 text-primary"></i>
+                    <div>
+                        <h6 class="mb-0 fw-bold">Authentic Product</h6>
+                        <small class="text-muted">100% genuine guaranteed</small>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="bg-white py-5 mt-5">
+        <div class="container">
+            <h3 class="fw-bold mb-4">You May Also Like</h3>
+            <div class="row row-cols-2 row-cols-md-4 g-3">
+                <div class="col">
+                    <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80" class="img-fluid rounded mb-2" style="height: 200px; width: 100%; object-fit: cover;">
+                    <p class="small fw-bold mb-0">Summer Shades</p>
+                    <p class="small text-muted">$45.00</p>
+                </div>
+                <div class="col">
+                    <img src="https://images.unsplash.com/photo-1603189343302-e603f7add05a?q=80" class="img-fluid rounded mb-2" style="height: 200px; width: 100%; object-fit: cover;">
+                    <p class="small fw-bold mb-0">Formal Jacket</p>
+                    <p class="small text-muted">$120.00</p>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <footer class="bg-white pt-5 pb-4 border-top">
+      <div class="container text-center">
+        <p class="text-muted mb-0 small">© 2026 Fashion Loft Inc. All rights reserved.</p>
+        <div class="mt-3 d-flex justify-content-center gap-3 text-muted">
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter-x"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
